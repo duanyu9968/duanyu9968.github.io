@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>段誉的个人网站</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 60px;
+    }
+
+    header h1 {
+      font-size: 22px;
+      color: #0078ff;
+      margin: 0;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #0078ff;
+    }
+
+    section {
+      padding: 80px 60px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      color: #0078ff;
+      margin-bottom: 50px;
+    }
+
+    /* 关于我 */
+    .about {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .about img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 40px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .about-text {
+      max-width: 500px;
+      line-height: 1.8;
+      font-size: 16px;
+    }
+
+    /* 作品展示 */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .project-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      padding: 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .project-card h3 {
+      color: #0078ff;
+      margin-bottom: 10px;
+    }
+
+    /* 联系我 */
+    .contact {
+      text-align: center;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .contact a {
+      color: #0078ff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background: #fff;
+      color: #888;
+      font-size: 14px;
+      margin-top: 50px;
+      border-top: 1px solid #eee;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 10px 20px;
+      }
+
+      .about {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about img {
+        margin: 0 0 20px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>段誉</h1>
+    <nav>
+      <a href="#about">关于我</a>
+      <a href="#projects">作品展示</a>
+      <a href="#contact">联系我</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>关于我</h2>
+    <div class="about">
+      <img src="avatar.jpg" alt="段誉的头像" />
+      <div class="about-text">
+        <p>你好，我是段誉，一名热爱学习与探索的创作者。我喜欢用技术与创意实现有趣的想法。这个网站将记录我的成长历程，也会展示我在编程、设计和创意方面的作品。</p>
+        <p>我相信，坚持学习与行动，能让我们离梦想更近一点。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>我的作品展示</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>作品一标题</h3>
+        <p>这里可以放作品描述，比如网站、应用或设计项目的介绍。</p>
+      </div>
+      <div class="project-card">
+        <h3>作品二标题</h3>
+        <p>可以展示你的代码项目、设计案例、摄影作品等内容。</p>
+      </div>
+      <div class="project-card">
+        <h3>作品三标题</h3>
+        <p>每个作品可以加上链接，让访问者直接查看详情。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>联系我</h2>
+    <div class="contact">
+      <p>📧 邮箱：<a href="mailto:dy17782679986@163.com">dy17782679986@163.com</a></p>
+      <p>欢迎联系我，一起交流创意与技术。</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 段誉 All Rights Reserved.
+  </footer>
+</body>
+</html>
